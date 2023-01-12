@@ -1,0 +1,282 @@
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 1500px; 
+    margin: 0px auto;
+    background: #F5F8FD;
+   /* background: #141414;*/
+    /* background-image: url(imageip/merry2.jpg); */
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+#menu_top{
+    background: #141414;
+    height:30px ;
+    width: 1500px;    
+}
+#menu_top,#a{
+    text-align: center;     
+    font-size: 20px;
+    padding-top: 5px;
+    animation-duration: 750ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes blink {
+    from {background-color:rgb(240, 140, 140);}
+  to {background-color:yellow  ;}
+  }
+.menu_down{
+    background: #d70018;;
+    height: 90px;
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 5px;
+
+}
+.menu_down ul{
+    list-style:none;
+    margin-top: 0px;
+}
+.menu_down ul li{
+    display: inline-block;
+    padding: 5px;
+}
+.search{    
+    height: 40px;
+    width: 550px;
+    background-color: white;    
+    border-radius: 6px;
+    margin-left: 190px;
+    
+}
+.search input{
+    width: 480px;
+    height: 35px;
+    border: 0px;
+    padding-left: 20px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+/* .search button img{
+    width: 20px;
+    height: 30px;
+    vertical-align: middle;
+    
+} */
+.search button{
+    font-size: 22px;
+    vertical-align: middle;
+}
+.login{
+    text-decoration: none;
+    background-color: rgb(216, 99, 99);
+    color:#fff;
+    padding: 7px 20px;
+    border-radius: 6px;
+    transition: color 0.3s , background 0.3s ;
+    margin: 15px;
+}
+.login:hover{
+    color:#d70018;
+    background-color: #fff;
+}
+.cntt {
+    text-decoration: none;
+    background-color: rgb(216, 99, 99);
+    color: #fff;
+    padding: 7px 28px;
+    border-radius: 6px;
+    transition: color 0.3s, background 0.3s;
+    margin:0 auto;
+}
+.cntt:hover {
+    color: #d70018;
+    background-color: #fff;
+    }
+.cart {
+    font-size: 28px;
+    color: #fff;
+    background: #d70018;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 1rem;
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+   
+}
+.cart:hover .cart-list-cart{
+    display: block;
+    
+}
+/* @keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.cart-list-cart{
+    z-index: 1;
+    position: absolute;
+    top: calc(100% + 4px);
+    right: -3px;
+    background-color: var(--white-color);
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0,0,0,0.2);
+    display: none;
+    animation: fadeIn ease-in 0.5s;
+}
+.cart-no-cart-img{
+    
+    width: 100%;
+} */
+/* img{
+    width: 100%;
+} */
+/* .item-gio-hang input{
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+} */
+.main{
+    width: 1500px;
+    height: 700px;
+}
+.product-price {
+    display: flex;
+    align-items: center;
+    
+}
+.cart-btn {
+    display: inline-block;
+    background-color: #fd6e1d;
+    border-radius: 10px;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px 600px;
+    transition: all .5s;
+    vertical-align: middle;
+    width: 400px;
+    text-align: center;
+    height: auto;
+    margin-top:30px;
+
+}
+.cart-btn:hover {
+    background-color: rgb(238, 74, 74);
+}
+.gio-hang{
+    border:1px solid #addd;
+    box-shadow: 2px 2px 4px #ddd;
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 6px;
+    
+}
+
+.item-gio-hang{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.item-gio-hang .hinhAnh img{
+    width: 100px;
+    height: 140px;
+}
+ .item-gio-hang .hinhAnh, .soLuong, .tongTien, .hanhDong{
+    flex: 1;
+    margin-left: 10px;
+}
+.item-gio-hang .soluong{
+    flex: 2;
+    
+}
+ .item-gio-hang .gia{
+    margin-left: 20px;
+    flex: 2.5;
+}
+.item-gio-hang .ten{
+    flex: 2;
+}
+.item-gio-hang .hanhDong{
+    flex:1;
+}
+.item-gio-hang .gia .giaGoc{
+    font-size: 25px;
+    text-decoration: line-through;
+    color:#888;
+}
+
+.item-gio-hang .gia .giaBan{
+    color:#f7452e;
+    font-size: 20px;
+}
+.item-gio-hang .hanhDong i:hover{
+    color: #f7452e;
+}
+h2{
+    color:#288ad6;
+}
+p{
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.footer{
+    height: 189px;
+    width: 1500px;
+    background: #333;
+    margin-bottom: 5px;
+    
+    
+}
+.grid{
+    width:1200px;
+    max-width: 100%;
+    margin: -27px auto;
+    border-top: 2px solid #d70018;
+}
+.grid_full-width{
+    width: 100%;
+}
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -22px;
+    margin-right: -5px;
+}
+.grid_column-2-4 h3{
+    margin-left:42px;
+    padding-right:142px;
+   color:rgb(162, 218, 215);
+}
+.footer-item_link a{
+    text-decoration: none;
+}
+.footer-list{
+    list-style:none;
+}
+.footer-item_link{
+    text-decoration: none;
+    font-size:1.2rem;
+    /*color:#737373;*/
+    color: #b6c0c9;
+    padding: 2px 0;
+    display: block;
+}
+
+.footer-item_link:hover{
+  color: var(--primary-color);
+}
+.footer-item_icon{
+   font-size:1.6rem;
+   margin: -1px; 
+}

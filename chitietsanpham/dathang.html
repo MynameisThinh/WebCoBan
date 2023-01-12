@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Hàng</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="build/css/intlTelInput.css">
+<link rel="stylesheet" type="text/css" href="dathang.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+<link rel="icon" href="https://img.icons8.com/dusk/100/000000/purchase-order.png"/>
+<style type="text/css">
+    input:required:invalid, input:focus:invalid {
+        background-image: url(images/invalid.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+    input:required:valid, input:focus:valid {
+        background-image: url(images/valid.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+</style>
+</head>
+<body>
+    <div id="menu_top">
+            
+        <a style="color:#d70018;text-decoration: none;" href="#" title="BlackFriday"><i><marquee behavior="alternate">Happy New Year 2021</marquee></i></a>
+    </div>
+    <div class="menu_down">
+        <ul>
+            
+            <li>
+                <a href="file:///D:/banhangdt/banhangdt.html">
+                    <img src="imageip/logo2.jpg" width="200px" height="60px" align="center">
+                </a>
+            </li>
+            <li>
+                <div class="search">
+                    <input type="" name="" placeholder="Bạn cần tìm gì">
+                    <button>
+                        <!-- <img src="imageip/search5.jpg"> -->
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+            </li>
+            <li>
+                <a href="file:///D:/banhangdt/logout.html?#" class="login"> Sing in/up SnoopS </a>
+            </li>
+           <li>
+            <a href="file:///D:/banhangdt/news.html" class="cntt">
+                24H News </a>
+           </li>
+             <li>
+                <div class="cart">                        
+                    <i class="fas fa-cart-plus"aria-hidden="true"></i>
+                    <!-- <div class="cart-list-cart cart-list-cart--no-cart">
+                        <img src="imageip/giohang.jpg" alt="" class="cart-no-cart-img">
+                        
+                    </div> -->
+                </div>
+            </li>
+        </ul>
+    </div>
+    <h2 style="font-size: 30px;color: #f7452e;">Thông tin đặt hàng</h2>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                
+<form action="#" method="get">
+  <div class="form-group row">
+    <label for="name" class="col-4 col-form-label">Họ tên</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-address-book"></i>
+          </div>
+        </div> 
+        <input id="name" name="name" placeholder="Nhập họ tên" type="text" class="form-control" required="required">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="phone" class="col-4 col-form-label">Số điện thoại</label> 
+    <div class="col-8">
+      <div class="input-group">
+       
+        <input id="telephone" name="phone" placeholder="Nhập số điện thoại" type="tel" class="form-control" required="required" pattern="\d{10,11}">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="email" class="col-4 col-form-label">Email</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-envelope"></i>
+          </div>
+        </div> 
+        <input id="email" name="email" placeholder="Nhập email" type="text" class="form-control" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="adress" class="col-4 col-form-label">Địa chỉ</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-home"></i>
+          </div>
+        </div> 
+        <input id="adress" name="adress" placeholder="Nhập địa chỉ của bạn" type="text" class="form-control">
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="country" class="col-4 col-form-label">Quốc gia</label> 
+    <div class="col-8">
+      <select id="country" name="country" class="custom-select">
+        <option value="VN">Việt Nam</option>
+        <option value="US">Hoa Kỳ</option>
+        <option value="CN">Trung Quốc</option>
+        <option value="JP">Nhật Bản</option>
+        <option value="KR">Hàn Quốc</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-4">Thanh Toán</label> 
+    <div class="col-8">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="bank" id="bank_0" type="radio" class="custom-control-input" value="rabbit"> 
+        <label for="bank_0" class="custom-control-label">Trực tiếp</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input name="bank" id="bank_1" type="radio" class="custom-control-input" value="duck"> 
+        <label for="bank_1" class="custom-control-label">Chuyển khoản</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="textarea" class="col-4 col-form-label">Ghi chú</label> 
+    <div class="col-8">
+      <textarea id="textarea" name="textarea" cols="40" rows="3" class="form-control"></textarea>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="submit" class="btn btn-primary" style="font-size: 20px; width: 170px;">Đặt Hàng</button>
+    </div>
+  </div>
+</form>
+            </div>
+        </div>
+        
+        <div class="vote">
+            <h2>Đánh giá của bạn</h2>
+            <input type="text" placeholder="Nhập đánh giá">
+            <input type="text" placeholder="Họ tên">
+            <input type="text" placeholder="Số điện thoại">
+            <input type="text" placeholder="Email">
+            <button><a href="" style="text-decoration: none;color: white;">GỬI ĐÁNH GIÁ</a></button>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="grid">
+            <div class ="grid_row">
+                <div class="grid_column-2-4">
+                    <h3 class="footer_heading">Chăm sóc khách hàng</h3>
+                    <ul class="footer_list">
+                        <div class="footer-item">
+                             <li><a href="" class="footer-item_link">Trung tâm trợ giúp</a></li>
+                             <li><a href="" class="footer-item_link">SnoopS Mail</a></li>
+                             <li><a href="" class="footer-item_link">Hướng dẫn mua hàng</a></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="grid_column-2-4">
+                 <h3 class="footer_heading">Thông tin liên hệ</h3>
+                 <ul class="footer_list">
+                  <div class="footer-item">
+                    <li><a href="" class="footer-item_link">Số điện thoại:0308080808</a></li>
+                    <li><a href="" class="footer-item_link">Email: snoops@gmail.com</a></li>
+                    <li><a href="" class="footer-item_link">Điạ chỉ: 84 SnoopS</a></li>
+               </div>
+                 </ul>
+                 </div>
+                 <!-- <div class="grid_column-2-4">
+                 <h3 class="footer_heading">Danh mục</h3>
+                 <ul class="footer_list">
+                     <div class="footer-item">
+                         <li><a href="" class="footer-item_link">Điện thoại</a></li>
+                         <li><a href="" class="footer-item_link">Phụ kiện</a></li>
+                         <li><a href="" class="footer-item_link">Khác</a></li>
+                    </div>
+                 </ul>
+                  </div> -->
+                 <div class="grid_column-2-4">
+                 <h3 class="footer_heading">Theo dõi</h3>
+                 <ul class="footer-list">
+                     <li class="footer-item">
+                        <a href="https://www.facebook.com/nho.mai.712161/" class="footer-item_link">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                         <a href="https://www.instagram.com/snoouyn/" class="footer-item_link">
+                            <i class="fab fa-instagram-square"></i>
+                             Instagram
+                         </a>
+                        <a href="https://www.youtube.com/watch?v=Y_w_9s8Tpy4&t=898s" class="footer-item_link">
+                            <i class="fab fa-youtube"></i>
+                              Youtube
+                         </a> 
+                 </li>
+                 </ul>
+                 </div>
+             </div> 
+
+     </div>
+    
+    </div>
+    
+</body>
+<script src="build/js/intlTelInput.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="build/js/intlTelInput-jquery.min.js"></script>
+<script>
+    $("#telephone").intlTelInput({
+
+});
+</script>
+<script type='text/javascript'>
+  //<![CDATA[
+  var pictureSrc ="https://1.bp.blogspot.com/-CXx9jt2JMRk/Vq-Lh5fm88I/AAAAAAAASwo/XivooDn_oSY/s1600/hoamai.png"; //the location of the snowflakes
+  var pictureWidth = 15; //the width of the snowflakes
+  var pictureHeight = 15; //the height of the snowflakes
+  var numFlakes = 10; //the number of snowflakes
+  var downSpeed = 0.01; //the falling speed of snowflakes (portion of screen per 100 ms)
+  var lrFlakes = 10; //the speed that the snowflakes should swing from side to side
+  
+  
+  if( typeof( numFlakes ) != 'number' || Math.round( numFlakes ) != numFlakes || numFlakes < 1 ) { numFlakes = 10; }
+  
+  //draw the snowflakes
+  for( var x = 0; x < numFlakes; x++ ) {
+  if( document.layers ) { //releave NS4 bug
+  document.write('<layer id="snFlkDiv'+x+'"><imgsrc="'+pictureSrc+'" height="'+pictureHeight+'"width="'+pictureWidth+'" alt="*" border="0"></layer>');
+  } else {
+  document.write('<div style="position:absolute; z-index:9999;"id="snFlkDiv'+x+'"><img src="'+pictureSrc+'"height="'+pictureHeight+'" width="'+pictureWidth+'" alt="*"border="0"></div>');
+  }
+  }
+  
+  //calculate initial positions (in portions of browser window size)
+  var xcoords = new Array(), ycoords = new Array(), snFlkTemp;
+  for( var x = 0; x < numFlakes; x++ ) {
+  xcoords[x] = ( x + 1 ) / ( numFlakes + 1 );
+  do { snFlkTemp = Math.round( ( numFlakes - 1 ) * Math.random() );
+  } while( typeof( ycoords[snFlkTemp] ) == 'number' );
+  ycoords[snFlkTemp] = x / numFlakes;
+  }
+  
+  //now animate
+  function flakeFall() {
+  if( !getRefToDivNest('snFlkDiv0') ) { return; }
+  var scrWidth = 0, scrHeight = 0, scrollHeight = 0, scrollWidth = 0;
+  //find screen settings for all variations. doing this every time allows for resizing and scrolling
+  if( typeof( window.innerWidth ) == 'number' ) { scrWidth = window.innerWidth; scrHeight = window.innerHeight; } else {
+  if( document.documentElement && (document.documentElement.clientWidth ||document.documentElement.clientHeight ) ) {
+  scrWidth = document.documentElement.clientWidth; scrHeight = document.documentElement.clientHeight; } else {
+  if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+  scrWidth = document.body.clientWidth; scrHeight = document.body.clientHeight; } } }
+  if( typeof( window.pageYOffset ) == 'number' ) { scrollHeight = pageYOffset; scrollWidth = pageXOffset; } else {
+  if( document.body && ( document.body.scrollLeft ||document.body.scrollTop ) ) { scrollHeight = document.body.scrollTop;scrollWidth = document.body.scrollLeft; } else {
+  if(document.documentElement && (document.documentElement.scrollLeft ||document.documentElement.scrollTop ) ) { scrollHeight =document.documentElement.scrollTop; scrollWidth =document.documentElement.scrollLeft; } }
+  }
+  //move the snowflakes to their new position
+  for( var x = 0; x < numFlakes; x++ ) {
+  if( ycoords[x] * scrHeight > scrHeight - pictureHeight ) { ycoords[x] = 0; }
+  var divRef = getRefToDivNest('snFlkDiv'+x); if( !divRef ) { return; }
+  if( divRef.style ) { divRef = divRef.style; } var oPix = document.childNodes ? 'px' : 0;
+  divRef.top = ( Math.round( ycoords[x] * scrHeight ) + scrollHeight ) + oPix;
+  divRef.left = ( Math.round( ( ( xcoords[x] * scrWidth ) - (pictureWidth / 2 ) ) + ( ( scrWidth / ( ( numFlakes + 1 ) * 4 ) ) * (Math.sin( lrFlakes * ycoords[x] ) - Math.sin( 3 * lrFlakes * ycoords[x]) ) ) ) + scrollWidth ) + oPix;
+  ycoords[x] += downSpeed;
+  }
+  }
+  
+  //DHTML handlers
+  function getRefToDivNest(divName) {
+  if( document.layers ) { return document.layers[divName]; } //NS4
+  if( document[divName] ) { return document[divName]; } //NS4 also
+  if( document.getElementById ) { return document.getElementById(divName); } //DOM (IE5+, NS6+, Mozilla0.9+, Opera)
+  if( document.all ) { return document.all[divName]; } //Proprietary DOM - IE4
+  return false;
+  }
+  
+  window.setInterval('flakeFall();',100);
+  //]]>
+  </script>  
+<!-- hiệu ứng pháo hoa -->
+<!-- <script type="text/javascript" src="https://itexpress.vn/js/new.year.min.js"></script> -->
+</html>

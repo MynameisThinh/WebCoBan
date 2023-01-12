@@ -1,0 +1,219 @@
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 1500px; 
+    margin: 0px auto;
+    background: #F5F8FD;
+   /* background: #141414;*/
+    /* background-image: url(imageip/merry2.jpg); */
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+#menu_top{
+    background: #141414;
+    height:30px ;
+    width: 1500px;    
+}
+#menu_top,#a{
+    text-align: center;     
+    font-size: 20px;
+    padding-top: 5px;
+    animation-duration: 750ms;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes blink {
+    from {background-color:rgb(240, 140, 140);}
+  to {background-color:yellow  ;}
+  }
+.menu_down{
+    background: #d70018;;
+    height: 90px;
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 5px;
+
+}
+.menu_down ul{
+    list-style:none;
+    margin-top: 0px;
+}
+.menu_down ul li{
+    display: inline-block;
+    padding: 5px;
+}
+.search{    
+    height: 40px;
+    width: 550px;
+    background-color: white;    
+    border-radius: 6px;
+    margin-left: 190px;
+    
+}
+.search input{
+    width: 480px;
+    height: 35px;
+    border: 0px;
+    padding-left: 20px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+/* .search button img{
+    width: 38px;
+    height: 30px;
+    vertical-align: middle;
+    
+} */
+.search button{
+    margin-left: 27px;
+    padding-bottom: 2px;
+    vertical-align: middle;
+}
+.login{
+    text-decoration: none;
+    background-color: rgb(216, 99, 99);
+    color:#fff;
+    padding: 7px 20px;
+    border-radius: 6px;
+    transition: color 0.3s , background 0.3s ;
+    margin: 15px;
+}
+.login:hover{
+    color:#d70018;
+    background-color: #fff;
+}
+.cntt {
+    text-decoration: none;
+    background-color: rgb(216, 99, 99);
+    color: #fff;
+    padding: 7px 28px;
+    border-radius: 6px;
+    transition: color 0.3s, background 0.3s;
+    margin:0 auto;
+}
+.cntt:hover {
+    color: #d70018;
+    background-color: #fff;
+    }
+.cart {
+    font-size: 28px;
+    color: #fff;
+    background: #d70018;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 1rem;
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+   
+}
+.cart:hover .cart-list-cart{
+    display: block;
+    
+}
+h2{
+    margin-top: 30px;
+    color: #f7452e;
+    
+}
+
+.container{
+    height: 900px;
+    width: 1500px;
+    /* background-color: aqua; */
+}
+
+.col-6{
+    padding-top: 20px;
+    font-size: auto;
+    
+}
+.vote{
+    width: 1000px;
+    height: 200px;
+    border:1px solid grey;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+.vote h2{
+    color:#868787;
+    font-family: sans-serif;
+}
+.vote input{
+    width: 200px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 20px;
+}
+.vote button{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #288ad6;
+    color: white;
+}
+.vote button:hover{
+    font-size: 18px;
+    
+}
+.footer{
+    height: 190px;
+    width: 1500px;
+    background: #333;
+    margin-bottom: 10px;
+    
+    
+}
+.grid{
+    width:1200px;
+    max-width: 100%;
+    margin: -27px auto;
+    border-top: 3px solid #d70018;
+}
+.grid_full-width{
+    width: 100%;
+}
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -22px;
+    margin-right: -5px;
+}
+.grid_column-2-4 h3{
+    margin-left:42px;
+    padding-right:168px;
+   color:rgb(162, 218, 215);
+   font-size: 28px;
+}
+.footer-item_link a{
+    text-decoration: none;
+}
+.footer-list{
+    list-style:none;
+}
+.footer-item_link{
+    text-decoration: none;
+    font-size:1.2rem;
+    /*color:#737373;*/
+    color: #b6c0c9;
+    padding: 2px 0;
+    display: block;
+}
+
+.footer-item_link:hover{
+  color: var(--primary-color);
+}
+.footer-item_icon{
+   font-size:1.6rem;
+   margin: -1px; 
+}
+
+
